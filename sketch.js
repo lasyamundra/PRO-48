@@ -49,11 +49,10 @@ function setup(){
     emptyBox.scale = 0.5
     emptyBox.visible = false;
 
-    emptyBox2 = createSprite (515,817);
+    emptyBox2 = createSprite (900,450);
     emptyBox2.addImage (emptyBox2Img);
     emptyBox2.scale = 0.5
     emptyBox2.visible = false;
-    emptyBox2.depth= background.depth+1;
 
     treasure = createSprite (width/2,height/2-25);
     treasure.addImage (treasureImg);
@@ -100,7 +99,7 @@ function draw(){
 
         fill(0);
         textSize(20)
-        text("You Found It! Well Done!!!",width/2,height/2-25);
+        text("You Found It! Well Done",width/2,height/2-25);
     }
 
     drawSprites();
